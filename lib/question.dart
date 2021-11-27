@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quiz_app/answer.dart';
+import 'package:flutter_quiz_app/heading.dart';
 
 typedef AnswerCallback = void Function(String);
 
@@ -16,11 +17,7 @@ class Question extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(
-          text,
-          style: const TextStyle(fontSize: 28),
-          textAlign: TextAlign.center,
-        ),
+        Heading(text),
         ...answers.map((e) => SizedBox(
               child: AnswerButton(
                 e,
