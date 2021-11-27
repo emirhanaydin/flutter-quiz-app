@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quiz_app/quiz.dart';
+import 'package:flutter_quiz_app/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,17 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
-      appBar: AppBar(
-        title: const Text("Quiz App"),
-      ),
-      body: Container(
-        child: const Center(
-          child: Quiz(),
-        ),
-        margin: const EdgeInsets.all(10),
-      ),
-    ));
+    return const MaterialApp(home: HomePage());
   }
 }
